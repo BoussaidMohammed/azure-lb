@@ -1,0 +1,20 @@
+<html xmlns:th="http://thymleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>template</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+	<h2>Algorithme Simulation Results</h2>
+
+	<ul th:each="r:${result}">
+		<li th:text="${r}">
+	</ul>
+	<form action="/">
+		<button type = "submit"> Re-execute test with new Values </button>
+	</form>
+</body>
+
+</html>
